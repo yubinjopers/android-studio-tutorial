@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/readyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready?"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/startNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start!" />
+
+    <TextView
+        android:id="@+id/pickerTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick a friend :)"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/cockatooBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cockatoo" />
+
+        <RadioButton
+            android:id="@+id/kittenBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kitten" />
+
+        <RadioButton
+            android:id="@+id/grandpadogBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grandpa Dog" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cockatoo" />
+
+</LinearLayout>
